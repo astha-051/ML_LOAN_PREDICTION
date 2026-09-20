@@ -3,7 +3,10 @@ import joblib
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from backend.schemas.prediction import LoanPredictionRequest, LoanPredictionResponse
+from schemas.prediction import (
+    LoanPredictionRequest,
+    LoanPredictionResponse
+)
 
 class ModelPredictor:
     def __init__(self, model_path: str = None):

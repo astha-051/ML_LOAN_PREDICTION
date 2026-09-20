@@ -1,7 +1,10 @@
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from backend.schemas.prediction import LoanPredictionRequest, LoanPredictionResponse
-from backend.services.predictor import ModelPredictor
+from schemas.prediction import (
+    LoanPredictionRequest,
+    LoanPredictionResponse
+)
+from services.predictor import ModelPredictor
 
 app = FastAPI(
     title="LoanGuard AI API",
